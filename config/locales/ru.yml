@@ -15,7 +15,9 @@ ru:
   listing_banner_boxes: "Баннеры"
   enabled: Включен?
   url: Ссылка
-  attachment: Вложение
+  attachment: Изображение
+  alt_text: Текст
+  thumbnail: Миниатюра
   category: Категория
   banner_boxes: Баннеры
   banner_box: Баннер
