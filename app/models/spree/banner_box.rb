@@ -23,8 +23,6 @@ module Spree
     scope :enable, lambda { |category| {:conditions => {:enabled => true, :category => category}} }
     
     # Load user defined paperclip settings
-    include Spree::Core::S3Support
-    supports_s3 :attachment
     
     Spree::BannerBox.attachment_definitions[:attachment][:styles] = ActiveSupport::JSON.decode(Spree::Config[:banner_styles])
     Spree::BannerBox.attachment_definitions[:attachment][:path] = Spree::Config[:banner_path]
